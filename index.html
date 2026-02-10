@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Registration Form</h2>
+
+    <form id="myForm">
+
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" id="name">
+            <div class="error" id="nameError"></div>
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" id="email">
+            <div class="error" id="emailError"></div>
+        </div>
+
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="text" id="phone">
+            <div class="error" id="phoneError"></div>
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" id="password">
+            <div class="error" id="passwordError"></div>
+        </div>
+
+        <div class="form-group">
+            <label>Confirm Password</label>
+            <input type="password" id="confirmPassword">
+            <div class="error" id="confirmPasswordError"></div>
+        </div>
+
+        <div class="form-group">
+            <label>Age</label>
+            <input type="number" id="age">
+            <div class="error" id="ageError"></div>
+        </div>
+
+        <div class="form-group">
+            <label>Gender</label>
+            <select id="gender">
+                <option value="">Select</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+            <div class="error" id="genderError"></div>
+        </div>
+
+        <div class="form-group">
+            <label>Country</label>
+            <select id="country">
+                <option value="">Select</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Canada</option>
+            </select>
+            <div class="error" id="countryError"></div>
+        </div>
+
+        <div class="form-group">
+            <label>Address</label>
+            <textarea id="address" rows="3"></textarea>
+            <div class="error" id="addressError"></div>
+        </div>
+
+        <div class="form-group">
+            <label>Skills</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="skills"> HTML</label>
+                <label><input type="checkbox" name="skills"> CSS</label>
+                <label><input type="checkbox" name="skills"> JavaScript</label>
+                <label><input type="checkbox" name="skills"> Python</label>
+            </div>
+            <div class="error" id="skillsError"></div>
+        </div>
+
+        <div class="form-group">
+            <label>
+                <input type="checkbox" id="terms"> I agree to the Terms & Conditions
+            </label>
+            <div class="error" id="termsError"></div>
+        </div>
+
+        <button type="submit">Submit</button>
+        <div class="success" id="successMsg"></div>
+
+    </form>
+</div>
+
+<script src="form.js"></script>
+</body>
+</html>
